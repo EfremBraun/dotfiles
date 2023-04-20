@@ -1,0 +1,12 @@
+[user]
+	name = Efrem Braun
+	email = efrem.braun@schrodinger.com
+[pull]
+	rebase = true
+[filesystem "AdoptOpenJDK|11.0.11|/dev/sdb1"]
+	timestampResolution = 9000 nanoseconds
+	minRacyThreshold = 1281 microseconds
+[alias]
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[color]
+	ui = auto
