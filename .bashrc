@@ -12,6 +12,7 @@ fi
 # Desktop specific
 if [[ -n "$_is_my_desktop" ]] || [[ -n "$_is_Hai_desktop" ]]; then
     alias tmux='/nfs/utils/bin/tmux'
+    alias nvim='/home/braun1/opt/nvim.appimage' # allows access to a sufficiently high version of neovim to enable GitHub Copilot
     shopt -s direxpand # per https://askubuntu.com/a/136633
 fi
 
