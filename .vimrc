@@ -4,17 +4,17 @@ filetype plugin indent on       " loads vim's ftplugin files automatically when 
 syntax on                       " syntax highlighting
 colorscheme default
 
-# settings needed for both vim and neovim
+" settings needed for both vim and neovim
 set nowrap                      " stop lines from wrapping
 set ignorecase                  " ignore case when searching
 set smartcase                   " if search has a capital letter, don't ignore case when searching
 
-# settings needed for neovim
+" settings needed for neovim
 if has('nvim')
     set clipboard+=unnamedplus  " use system clipboard
     set background=light        " set background to allow me to work with a dark terminal profile
 endif
-# defaults for neovim, so only need to set them for vim
+" defaults for neovim, so only need to set them for vim
 if !has('nvim')
     set ruler                   " show the cursor position all the time
     set showcmd                 " do incremental searching
