@@ -35,3 +35,11 @@ augroup RMWHITESPACE
     autocmd!
     autocmd BufWritePre * :call TrimWhitespace()
 augroup END
+
+" Copilot mappings
+"imap <C--> <Plug>(copilot-dismiss)
+"imap <C-=> <Plug>(copilot-suggest)
+imap <C-\> <Plug>(copilot-next)
+imap <C-]> <Plug>(copilot-previous)
+imap <C-Right> <Plug>(copilot-accept-word)
+imap <C-Down> <Plug>(copilot-accept-line)
