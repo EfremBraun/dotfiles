@@ -14,6 +14,7 @@ if has('nvim')
     set clipboard+=unnamedplus  " use system clipboard
     set background=light        " set background to allow me to work with a dark terminal profile
     set mouse=                  " required for copy/paste
+    set noautoread              " don't automatically reload file if contents change
 endif
 " defaults for neovim, so only need to set them for vim
 if !has('nvim')
