@@ -8,13 +8,14 @@ colorscheme default
 set nowrap                      " stop lines from wrapping
 set ignorecase                  " ignore case when searching
 set smartcase                   " if search has a capital letter, don't ignore case when searching
+set background=dark             " set background to allow me to work with a dark terminal profile
 
 " settings needed for neovim
 if has('nvim')
     set clipboard+=unnamedplus  " use system clipboard
-    set background=light        " set background to allow me to work with a dark terminal profile
     set mouse=                  " required for copy/paste
     set noautoread              " don't automatically reload file if contents change
+    colorscheme vim             " maintain consistent color scheme with vim
 endif
 " defaults for neovim, so only need to set them for vim
 if !has('nvim')
